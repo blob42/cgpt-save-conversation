@@ -22,7 +22,7 @@
         let markdown = '# ' + title + '\n';
         let currentParticipant = 'Me';
         for (let i = 0; i < messages.length; i++) {
-            markdown += currentParticipant + ': ' + messages[i].innerText + '\n---\n';
+            markdown += currentParticipant + ': ' + messages[i].innerText + '\n\n---\n\n';
             currentParticipant = currentParticipant === 'Me' ? 'GPT' : 'Me';
         }
         const filename = title_save + '.md';
